@@ -2,4 +2,7 @@ git clone
 git init
 git push
 git pull
+git status
+git remote
+git add 
 ....
