@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  /**
+   * Bài toán 1: Cho người dùng nhập vào điểm số của học viên CodeGym.
+   * Nếu điểm số được nhập không phải là số thì thông báo là nhập lỗi
+   */
+  // let mark = parseInt(prompt("Nhập điểm vào cho học viên: "));
+  // if (isNaN(mark)){
+  //   document.writeln("<h1>Bạn nhập không phải là số</h1>");
+  // }
+
+  /**
+   * Bài toán 2: Cho người dùng nhập vào điểm số của học viên CodeGym.
+   * Nếu điểm số được nhập không phải là số thì thông báo là nhập lỗi
+   * Nếu nó là số thì thông báo bạn đã nhập điểm thành công
+   */
+  // let mark = parseInt(prompt("Nhập điểm vào cho học viên: "));
+  // if (isNaN(mark) || mark < 0 || mark > 100){
+  //   document.writeln("<h1>Bạn nhập điểm không hợp lệ</h1>");
+  // }else {
+  //   document.writeln("<h1>Bạn nhập điểm thành công</h1>");
+  // }
+
+  /**
+   * Bài toán 3: Cho người dùng nhập vào điểm số của học viên CodeGym.
+   * Nếu điểm số được nhập không phải là số thì thông báo là nhập lỗi
+   * Nếu nó là số thì kiểm tra xem số có lớn hơn hay bằng 60 không
+   * Nếu < 60 thì thông báo học viên Fail Module
+   * Nếu >= 60 thì thông báo học viên Pass Module
+   */
+  // let mark = parseInt(prompt("Nhập điểm vào cho học viên: "));
+  // if (isNaN(mark) || mark < 0 || mark > 100){
+  //   document.writeln("<h1>Bạn nhập điểm không hợp lệ</h1>");
+  // }else {
+  //   if (mark >= 60){
+  //     document.writeln("<h1>Học viên này PASS MODULE</h1>");
+  //   }else {
+  //     document.writeln("<h1>Học viên này FAIL MODULE</h1>");
+  //   }
+  // }
+
+  /**
+   * Bài toán 3: Cho người dùng nhập vào điểm số của học viên CodeGym.
+   * Nếu điểm số được nhập không phải là số thì thông báo là nhập lỗi
+   *
+   * Nếu điểm > 80 thì thông báo học viên đạt loại giỏi
+   * Nếu > 70 thì thông báo học viên đạt loại khá
+   * Nếu > 60 thì thông báo học viên đạt loại trung bình
+   * Nếu > 50 thì thông báo học viên đạt loại yếu
+   * Nếu <= 50 thì thông báo học viên đạt loại kém
+   */
+
+  let mark = parseInt(prompt("Nhập điểm vào cho học viên: "));
+  if (isNaN(mark) || mark < 0 || mark > 100){
+    document.writeln("<h1>Bạn nhập điểm không hợp lệ</h1>");
+  }else {
+    if (mark > 80){
+      document.writeln("<h1>Học viên đạt loại giỏi</h1>")
+    }else if(mark > 70){
+      document.writeln("<h1>Học viên đạt loại khá</h1>")
+    }else if (mark > 60){
+      document.writeln("<h1>Học viên đạt loại trung bình</h1>")
+    }else if (mark > 50){
+      document.writeln("<h1>Học viên đạt loại yếu</h1>")
+    }else {
+      document.writeln("<h1>Học viên đạt loại kém</h1>")
+    }
+  }
+</script>
+</body>
+</html>

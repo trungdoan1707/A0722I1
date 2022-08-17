@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /**
+     * Cho người dùng nhập vào 1 số từ 0 -> 6
+     * Nếu người dùng nhập 0 thì in ra hôm nay là chủ nhật
+     * Nếu người dùng nhập 1 thì in ra hôm nay là thứ hai
+     * Nếu người dùng nhập 2 thì in ra hôm nay là thứ ba
+     * Nếu người dùng nhập 3 thì in ra hôm nay là thứ tư
+     * Nếu người dùng nhập 4 thì in ra hôm nay là thứ năm
+     * Nếu người dùng nhập 5 thì in ra hôm nay là thứ sáu
+     * Nếu người dùng nhập 6 thì in ra hôm nay là thứ bảy
+     */
+    let number = parseInt(prompt("Nhập vào 1 số từ 0 đến 6: "));
+    switch (number) {
+        case 0:
+            document.writeln("<h1>Hôm nay là chủ nhật</h1>");
+            break;
+        case 1:
+            document.writeln("<h1>Hôm nay là thứ 2</h1>");
+            break;
+        case 2:
+            document.writeln("<h1>Hôm nay là thứ 3</h1>");
+            break;
+        case 3:
+            document.writeln("<h1>Hôm nay là thứ 4</h1>");
+            break;
+        case 4:
+            document.writeln("<h1>Hôm nay là thứ 5</h1>");
+            break;
+        case 5:
+            document.writeln("<h1>Hôm nay là thứ 6</h1>");
+            break;
+        case 6:
+            document.writeln("<h1>Hôm nay là thứ 7</h1>");
+            break;
+        default:
+            document.writeln("<h1>Số bạn nhập không đúng</h1>");
+    }
+
+</script>
+</body>
+</html>
