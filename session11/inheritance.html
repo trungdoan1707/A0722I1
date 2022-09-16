@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Person {
+        constructor(name, idCard, address, age) {
+            this.name = name;
+            this.idCard = idCard;
+            this.address = address;
+            this.age = age;
+        }
+    }
+
+    class Customer extends Person {
+        constructor(name, idCard, address, age, account, history) {
+            super(name, idCard, address, age);
+            this.account = account;
+            this.history = history;
+        }
+    }
+
+    class Employee extends Person {
+        constructor(name, idCard, address, age, salary) {
+            super(name, idCard, address, age);
+            this.salary = salary;
+        }
+    }
+
+    // class User extends Employee{
+    //     constructor(name, idCard, address, age, salary, password) {
+    //         super(name, idCard, address, age, salary);
+    //         this.password = password;
+    //     }
+    // }
+</script>
+</body>
+</html>

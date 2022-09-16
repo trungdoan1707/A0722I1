@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Animal{
+        constructor(id, color) {
+        }
+
+        speak(){
+            alert("zzzz");
+        }
+    }
+
+    class Dog extends Animal{
+        constructor(id, color, type) {
+            super(id, color);
+            this.type = type
+        }
+        speak(){
+            alert("Gâu gâu");
+        }
+    }
+
+    class Duck extends Animal{
+        constructor(id, color, egg) {
+            super(id, color);
+            this.egg = egg
+        }
+        speak(){
+            alert("Quạc Quạc");
+        }
+    }
+
+    let dog1 = new Dog(1, "đen", "Phú Quốc");
+    let duck1 = new Duck(2, "trắng", 10);
+    dog1.speak();
+    duck1.speak();
+</script>
+</body>
+</html>

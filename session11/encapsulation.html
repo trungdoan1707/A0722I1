@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    class Account{
+        constructor(username, name, age, password) {
+            this.username = username;
+            this.name = name;
+            this.age = age;
+            this._password = password;
+        }
+
+        register(account){
+            //Lưu trữ lại account của người dùng
+        }
+
+        login(){
+            //Cho người dùng login
+        }
+
+        logout(){
+            //Cho người dùng logout
+        }
+
+        displayInformation(){
+            document.writeln("Username " + this.username);
+            document.writeln("<br>");
+            document.writeln("Name " + this.name);
+            document.writeln("<br>");
+            document.writeln("Age " + this.age);
+            document.writeln("<br>");
+        }
+    }
+
+    let account1 = new Account("user1", "Account1", 30, "123456");
+    account1.displayInformation();
+</script>
+</body>
+</html>
